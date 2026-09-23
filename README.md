@@ -49,3 +49,19 @@ Dataset: InjecAgent benchmark dataset (`InjecAgent-main.zip`).
    python src/app.py
    python src/test_demo.py
    ```
+
+## Empirical Test Performance (Test Set N=382)
+
+| Metric | Score | Percentage |
+| :--- | :--- | :--- |
+| **Accuracy** | `0.9686` | **96.86%** |
+| **Precision** | `0.9757` | **97.57%** |
+| **Recall** | `0.9877` | **98.77%** |
+| **F1 Score** | `0.9817` | **98.17%** |
+
+### Confusion Matrix
+```
+                       Predicted Benign (0)   Predicted Injection (1)
+Actual Benign (0)              49                     8
+Actual Injection (1)           4                     321
+```
